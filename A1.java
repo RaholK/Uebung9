@@ -26,9 +26,11 @@ public class A1 {
         // TODO: Übungblatt 9, Aufgabe 1
         Class c = o.getClass();
         Object[] methoden = c.getMethods();
+        
+        /*Method[] methods = c.getMethods */
 
         for(Object method : methoden) {
-            if(method.toString().toUpperCase().contains("TEST")) {
+            if(method.toString().toUpperCase().contains("TEST") /*&& Modifier.isStatic(method) */ {
                 System.out.println(method);
             }
         }
